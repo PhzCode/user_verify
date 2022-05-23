@@ -23,7 +23,6 @@ func getMessage(c echo.Context) error {
 }
 
 func verifyWallet(c echo.Context) error {
-	println("aaa")
 	addr := c.FormValue("address")
 	signedMsg := c.FormValue("signedMessage")
 
